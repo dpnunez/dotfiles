@@ -23,7 +23,7 @@
 #:     bold_font        Operator Mono Medium
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
-font_family JetBrainsMono Nerd Font
+
 font_size 16.0
 
 #: Font size (in pts).
@@ -886,6 +886,7 @@ cursor_shape beam
 #: between zero and one, with zero being fully faded).
 
 # hide_window_decorations no
+hide_window_decorations titlebar-only
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only and titlebar-and-corners can be used
