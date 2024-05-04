@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 dir=$(dirname "$0")
+rm ~/.zshrc
 
 for folder in "$dir"/*; do
     if [ -d "$folder" ]; then
