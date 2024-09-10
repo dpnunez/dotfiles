@@ -1,0 +1,6 @@
+# BEGIN_KITTY_THEME
+# Dimmed Monokai
+include current-theme.conf
+font_size 18
+font_family AnomymicePro Nerd Font
+# END_KITTY_THEME

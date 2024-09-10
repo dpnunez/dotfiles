@@ -1,13 +1,17 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="/opt/homebrew/bin:$PATH"
+ZSH_THEME="headline/headline"
 
-ZSH_THEME="robbyrussell"
-
-plugins=(git zsh-syntax-highlighting)
+plugins=(
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
-alias vim="nvim"
-alias zshrc="vim ~/.dotfiles/zsh/.zshrc"
-alias config-nvim="cd ~/.dotfiles/nvim/.config/nvim"
-alias config-kitty="cd ~/.dotfiles/kitty/.config/kitty"
+export EDITOR='vim'
+export PATH=$PATH:/opt/homebrew/bin # MacOS
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
