@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+eval "$(starship init zsh)"
 
 plugins=(
     git
@@ -8,7 +9,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-eval "$(starship init zsh)"
 export EDITOR='vim'
 export PATH=$PATH:/opt/homebrew/bin # MacOS
 
