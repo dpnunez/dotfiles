@@ -30,8 +30,7 @@ truncation_symbol = ''
 
 [git_branch]
 symbol = ''
-style = "bold #524f67"
-truncation_length = 4
+style = "bold rgb(127, 229, 209)"
 truncation_symbol = ''
 format = '[$symbol$branch(:$remote_branch)]($style) '
 

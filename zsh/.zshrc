@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 export PATH=$PATH:/opt/homebrew/bin # MacOS
+export PATH="/Users/porto/Library/Python/3.9/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
