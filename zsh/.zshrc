@@ -10,7 +10,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR='vim'
+# export EDITOR='vim'
 export PATH=$PATH:/opt/homebrew/bin # MacOS
 export PATH="/Users/porto/Library/Python/3.9/bin:$PATH"
 
