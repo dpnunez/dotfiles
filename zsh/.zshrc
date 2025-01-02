@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
-eval "$(starship init zsh)"
+
+ZSH_THEME="robbyrussell"
 
 plugins=(
     git
