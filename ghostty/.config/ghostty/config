@@ -1,1 +1,3 @@
 theme = dark:GitHub Dark,light:catppuccin-latte
+font-family = "GeistMono Nerd Font"
+font-size = 16
