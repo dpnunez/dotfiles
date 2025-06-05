@@ -1,12 +1,50 @@
+# Performance optimizations
+DISABLE_AUTO_UPDATE="true"
+DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_COMPFIX="true"
+
+# Cache completions aggressively
+autoload -Uz compinit
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
+    compinit
+else
+    compinit -C
+fi
+
+# Oh My Zsh path
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+# Theme config
+ZSH_THEME="spaceship"
+
+# Spaceship settings
+SPACESHIP_PROMPT_ASYNC=true
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_CHAR_SYMBOL="⚡"
+SPACESHIP_USER_SHOW=always
+
+# Minimal spaceship sections for performance
+SPACESHIP_PROMPT_ORDER=(
+  time
+  user
+  dir
+  git
+  line_sep
+  char
+)
+
 
 plugins=(
     git
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
+
+
+# Autosuggest settings
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#663399,standout"
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="20"
+ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 source $ZSH/oh-my-zsh.sh
 
@@ -26,7 +64,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 
-
 alias dev="cd ~/Development && code ."
 alias dotfiles="cd ~/.dotfiles && code ."
-alias cleanup="brew cleanup && docker system prune -f"
+
+PROMPT="%n@%m%# "
