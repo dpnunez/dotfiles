@@ -19,3 +19,12 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# OpenMP
+export OMP_NUM_THREADS=4
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
+

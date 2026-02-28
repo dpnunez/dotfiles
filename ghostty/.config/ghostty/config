@@ -1,3 +1,5 @@
 theme = dark:GitHub Dark,light:catppuccin-latte
 font-family = "GeistMono Nerd Font"
 font-size = 16
+cursor-style = "block"
+shell-integration-features = no-cursor
