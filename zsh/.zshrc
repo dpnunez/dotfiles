@@ -18,3 +18,4 @@ if [ -f ~/paths.zsh ]; then
 else
     echo "warning: paths.zsh not found"
 fi
+
