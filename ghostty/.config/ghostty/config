@@ -1,4 +1,4 @@
-theme = dark:GitHub Dark,light:catppuccin-latte
+theme = dark:TokyoNight,light:catppuccin-latte
 font-family = "GeistMono Nerd Font"
 font-size = 16
 cursor-style = "block"
