@@ -1,3 +1,4 @@
 require("config.lazy")
-
-vim.cmd[[colorscheme tokyonight-night]]
+require("config.set")
+require("config.theme")
+require("config.remap")
