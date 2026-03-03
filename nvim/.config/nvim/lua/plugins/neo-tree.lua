@@ -10,9 +10,19 @@ return {
     lazy = false, -- neo-tree will lazily load itself
     config = function()
       require("neo-tree").setup({
+        window = {
+          -- Prevent floating window from being cropped (border + content fit in screen)
+          popup = {
+            size = {
+              height = "75%",
+              width = "45%",
+            },
+            position = "50%",
+            border = { style = "rounded" },
+          },
+        },
         filesystem = {
           filtered_items = {
-            -- show filtered items, but without dimming them
             visible = true,
             hide_dotfiles = false,
             hide_gitignored = false,
