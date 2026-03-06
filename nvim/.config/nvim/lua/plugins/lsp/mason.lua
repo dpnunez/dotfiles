@@ -1,28 +1,29 @@
 return {
-    "williamboman/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = {
-        "ts_ls",
-        "html",
-        "tailwindcss",
-        "lua_ls",
-        "prismals",
-        "eslint",
-      },
+  "williamboman/mason-lspconfig.nvim",
+  opts = {
+    ensure_installed = {
+      "ts_ls",
+      "html",
+      "tailwindcss",
+      "lua_ls",
+      "prismals",
+      "eslint",
+      "stylua",
     },
-    dependencies = {
-      {
-        "williamboman/mason.nvim",
-        opts = {
-          ui = {
-            icons = {
-              package_installed = "✓",
-              package_pending = "➜",
-              package_uninstalled = "✗",
-            },
+  },
+  dependencies = {
+    {
+      "williamboman/mason.nvim",
+      opts = {
+        ui = {
+          icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗",
           },
         },
       },
-      "neovim/nvim-lspconfig",
     },
-  }
+    "neovim/nvim-lspconfig",
+  },
+}
