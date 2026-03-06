@@ -1,4 +1,4 @@
-return { 
-    "folke/lazydev.nvim",
-    opts = {},
+return {
+  "folke/lazydev.nvim",
+  opts = {},
 }
